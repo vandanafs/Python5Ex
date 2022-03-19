@@ -49,6 +49,7 @@ class ListUtilsTest(unittest.TestCase):
         for list_in, list_out, half_param in test_cases:
             with self.subTest(f"{list_in}, {half_param} -> {list_out}"):
                 self.assertEqual(list_out, list_utils.half_list(list_in, half_param))
+        print("print test ",list_out)
 
     def test_remove_odds(self):
         list_in = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
