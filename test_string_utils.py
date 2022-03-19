@@ -30,6 +30,7 @@ class TestStringUtils(unittest.TestCase):
         for expected, word in test_cases:
             with self.subTest(f"{expected} -> {word}"):
                 self.assertEqual(expected, string_utils.last_char(word))
+       # print(string_utils.str_len(word))
 
     def test_input_has_substring(self):
         test_cases = [
